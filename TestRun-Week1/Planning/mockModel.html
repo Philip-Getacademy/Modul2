@@ -6,71 +6,38 @@
 -->
 <script>
 
-/* model.polls[0].answer */
+/* model[0].inputs */
+/* model[0].selectedPolls */
+/* model.inputs    */
+/* model.inputs.selectedPoll    */
 
-/* model.polls[0].displayedQuestion[0].thisQuestion*/
 
 
 
-
-    var model = 
+var model =
+{
+    inputs:
     {
-        polls: 
-        [
-            {
-                /*Eksempel*/
-                displayedQuestion: 
-                [ 
-                    {
-                        thisQuestion: 'Liker is'
-                    },
-                    {
-                        thisAlternativeOne: 'Ja'
-                    },
-                    {
-                        thisAlternativeTwo: 'Nei'
-                    },
-                    {
-                        thisAlternativeThree: 'Custom'
-                    },
-            
-                ]
-            },
-            {
-                otherQuestions: [
-                    {''}
-                ]
-            
-            }
-            
-             {
-                //  expanded:true;
-                 question: 'Liker is',
-                 alternatives: 
-                 [ 
-                     {
-                         answer:'Ja',
-                         percentage:'10%'
-                                              
-                     },
-                     {
-                         answer: 'Nei',
-                         percentage:'50%'
-                     },
-                     {
-                         answer: 'Custom',
-                         percentage:'40%'
-                     }
-                 ],
-                
-                   
-            
-                
-             },
-            
-         
-        ]
-    };
+        selectedPoll : 
+        {
+            someOtherPoll : 0,          
+        },
+
+    },
+   
+    polls: 
+    [
+        {   question: 'Liker is?', besvart: '3/15',   },
+        {   question: 'Vil på telt tur'  },
+        {   question: 'Kan spille trekkspill'  },
+        {   question: 'Vet hvordan dette funker'  },
+        {   question: 'Har lyst på ny flaggstang'  }
+    ]
+    
+    
+}
+
+
 
 </script>
 
