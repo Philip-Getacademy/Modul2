@@ -1,0 +1,76 @@
+<!-- 
+    
+1) Hvilken informasjon trenger vi for å tegne opp dette skjermbildet? (queries)
+2) Hva kan man gjøre på dette skjermbildet - og hvilke endringer skal det føre til i modellen? (commands) 
+
+-->
+<script>
+
+/* model.polls[0].answer */
+
+/* model.polls[0].displayedQuestion[0].thisQuestion*/
+
+
+
+
+    var model = 
+    {
+        polls: 
+        [
+            {
+                /*Eksempel*/
+                displayedQuestion: 
+                [ 
+                    {
+                        thisQuestion: 'Liker is'
+                    },
+                    {
+                        thisAlternativeOne: 'Ja'
+                    },
+                    {
+                        thisAlternativeTwo: 'Nei'
+                    },
+                    {
+                        thisAlternativeThree: 'Custom'
+                    },
+            
+                ]
+            },
+            {
+                otherQuestions: [
+                    {''}
+                ]
+            
+            }
+            
+             {
+                //  expanded:true;
+                 question: 'Liker is',
+                 alternatives: 
+                 [ 
+                     {
+                         answer:'Ja',
+                         percentage:'10%'
+                                              
+                     },
+                     {
+                         answer: 'Nei',
+                         percentage:'50%'
+                     },
+                     {
+                         answer: 'Custom',
+                         percentage:'40%'
+                     }
+                 ],
+                
+                   
+            
+                
+             },
+            
+         
+        ]
+    };
+
+</script>
+
